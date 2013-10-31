@@ -1,7 +1,11 @@
 nl:
+  topbar:
+    dashboard: "Home"
+    users: "Gebruikers"
+    registrations: "Inschrijvingen"
+    events: "Evenementen"
+    series: "Series"
   user:
-    remember_address: "Onthoud mijn adres voor toekomstige inschrijvingen"
-    remember_emergency_contacts: "Onthoud mijn noodcontacten voor toekomstige inschrijvingen" #this is f*cking ugly
     address:
       label: "Adres"
       notfound: "Adres niet gevonden"
@@ -16,3 +20,46 @@ nl:
     no_future_events: "Geen toekomstige evenementen"
     registrations: "Inschrijvingen"
     no_registrations: "Geen inschrijvingen"
+
+  common:
+    page_header:
+      editing: '%{model} bewerken'
+      dashboard: Dashboard
+
+  activerecord:
+    models:
+      series: serie
+      event: evenement
+      user: gebruiker
+      registration: inschrijving
+    attributes:
+      event:
+        name: naam
+        title: titel
+        start_date: begindatum
+        end_date: einddatum
+        location_name: locatie
+        location_info: locatie-info
+        description: omschrijving
+        url: website
+        series_id: serie
+      user:
+        first_name: voornaam
+        preposition: tussenvoegsels
+        last_name: achternaam
+        username: inlognaam
+        birthdate: geboortedatum
+        phone_number: telefoonnummer
+        email: e-mailadres
+        gender: geslacht
+        hide_last_name: achternaam afkorten in publieke lijsten?
+        remember_address: onthoud mijn adres voor toekomstige inschrijvingen
+        remember_emergency_contacts: onthoud mijn noodcontacten voor toekomstige inschrijvingen
+      series:
+        name: naam
+        url: website
+      registration:
+        user: deelnemer
+        event: evenement
+        status: status
+

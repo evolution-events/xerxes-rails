@@ -2,11 +2,11 @@
   <div class="navbar-inner">
     <div class="container">
       <ul class="nav">
-        <li><a href="<%= root_path %>">Home</a></li>
-        <li><a href="<%= users_path %>">Users</a></li>
-        <li><a href="<%= registrations_path %>">Registrations</a></li>
-        <li><a href="<%= events_path %>">Events</a></li>
-        <li><a href="<%= series_index_path %>">Series</a></li>
+        <li><%= link_to t('topbar.dashboard'), root_path -%></li>
+        <li><%= link_to t('topbar.users'), users_path -%></li>
+        <li><%= link_to t('topbar.registrations'), registrations_path -%></li>
+        <li><%= link_to t('topbar.events'), events_path -%></li>
+        <li><%= link_to t('topbar.series'), series_index_path -%></li>
       </ul>
     </div>
   </div>

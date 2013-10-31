@@ -1,7 +1,11 @@
 en:
+  topbar:
+    dashboard: "Home"
+    users: "Users"
+    registrations: "Registrations"
+    events: "Events"
+    series: "Series"
   user:
-    remember_address: "Remember my address for future registrations"
-    remember_emergency_contacts: "Remember my emergency contacts for future registrations"
     address:
       label: "Address"
       notfound: "Address not found"
@@ -16,3 +20,47 @@ en:
     no_future_events: "No future events"
     registrations: "Registrations"
     no_registrations: "No registrations"
+
+  common:
+    page_header:
+      editing: 'editing %{model}'
+      dashboard: Dashboard
+
+  activerecord:
+    models:
+      event: event
+      series: series
+      user: user
+      registration: registration
+    attributes:
+      event:
+        name: name
+        title: title
+        start_date: start date
+        end_date: end date
+        location_name: location
+        location_info: location info
+        description: description
+        url: website
+        series_id: series
+      user:
+        first_name: first name
+        preposition: preposition
+        last_name: last name
+        username: login
+        birthdate: birthdate
+        phone_number: phone number
+        email: email
+        gender: gender
+        hide_last_name: abbreviate last name in public communication?
+        remember_address: remember my address for future registrations
+        remember_emergency_contacts: remember my emergency contacts for future registrations
+      series:
+        name: name
+        url: website
+      registration:
+        user: participant
+        event: event
+        status: status
+
+
