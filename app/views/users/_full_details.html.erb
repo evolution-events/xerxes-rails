@@ -1,0 +1,18 @@
+<%= render partial: "details", locals: { user: user } %>
+
+<p>
+  <strong>First aid:</strong>
+  <%= @user.firstaid %>
+</p>
+
+<p>
+  <strong>BHV:</strong>
+  <%= @user.bhv %>
+</p>
+
+<%= render partial: "address", locals: { address: user.address } %>
+
+<%= render partial: "medical_details" %>
+
+<%= render partial: "emergency_contacts" %>
+
