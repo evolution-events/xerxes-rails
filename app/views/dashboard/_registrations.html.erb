@@ -3,7 +3,7 @@
 if user.registrations.any? then
   content_tag('ul') do
     content_tag('li') do
-      render partial: "registration", collection: user.registrations
+      render partial: "dashboard/registration", collection: user.registrations
     end
   end
 else

@@ -3,7 +3,7 @@
 if @future_events.any? then
   content_tag('ul') do
     content_tag('li') do
-      render partial: "future_event", collection: @future_events
+      render partial: "dashboard/future_event", collection: @future_events
     end
   end
 else
