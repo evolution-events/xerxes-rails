@@ -9,6 +9,12 @@ Xerxes::Application.routes.draw do
 
   resources :series
 
+  get 'events/:id/register/start', to: 'register#start', as: :register_start
+  post 'events/:id/register/start', to: 'register#register'
+  get 'events/:id/register/check_details', to: 'register#check_details', as: :register_check_details
+  post 'events/:id/register/check_details', to: 'register#details_checked'
+  get 'events/:id/register/complete', to: 'register#complete'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

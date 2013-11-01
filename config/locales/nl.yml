@@ -16,3 +16,7 @@ nl:
     no_future_events: "Geen toekomstige evenementen"
     registrations: "Inschrijvingen"
     no_registrations: "Geen inschrijvingen"
+  registration:
+    register: "Inschrijven"
+    details_ok: "Mijn gegevens kloppen"
+    change_details: "Wijzig mijn gegevens"

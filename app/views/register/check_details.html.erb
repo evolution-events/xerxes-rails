@@ -1,0 +1,24 @@
+<h1>Register for event</h1>
+
+<p>
+A spot was reserved for you, now please finishe the registration process as soon as possible to make your registration permanent.
+</p>
+
+<h2>Check your details</h2>
+<%
+# Pass the current user to the users/show template. This doesn't strike
+# me as very elegant, though.
+@user = @current_user
+%>
+<%= render partial: "users/full_details" %>
+
+<% # TODO: Can't we just post to the current url? form_for defaults to
+   # that, unless we pass a resource-full object like we do now, then it
+   # defaults to whatever controller is associated with that object...
+%>
+<%= form_for(@registration, url: register_check_details_path(@registration)) do |f| %>
+  <div class="actions">
+    <%= f.submit t('registrations.details_ok'), name: 'details_ok' %>
+    <%= f.submit t('registrations.details_wrong'), name: 'details_wrong' %>
+  </div>
+<% end %>

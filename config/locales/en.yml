@@ -16,3 +16,7 @@ en:
     no_future_events: "No future events"
     registrations: "Registrations"
     no_registrations: "No registrations"
+  registration:
+    register: "Register"
+    details_ok: "My details are correct"
+    change_details: "Change my details"

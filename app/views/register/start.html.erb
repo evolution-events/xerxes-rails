@@ -1,0 +1,15 @@
+<h1>Register for event</h1>
+
+<p>
+You're about to register for <%= @event.name %>
+</p>
+
+<p>
+In the future, you can also select some options here.
+</p>
+
+<%= form_for(:registration) do |f| %>
+  <div class="actions">
+    <%= f.submit t('registrations.register') %>
+  </div>
+<% end %>
