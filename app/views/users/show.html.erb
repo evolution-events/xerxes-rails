@@ -1,12 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<%= render partial: "details" %>
-
-<%= render partial: "address", locals: { address: @user.address } %>
-
-<%= render partial: "medical_details" %>
-
-<%= render partial: "emergency_contacts" %>
+<%= render partial: "full_details" %>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
