@@ -1,25 +1,25 @@
 nl:
   topbar:
-    dashboard: "Home"
-    users: "Gebruikers"
-    registrations: "Inschrijvingen"
-    events: "Evenementen"
-    series: "Series"
+    dashboard: Home
+    users: Gebruikers
+    registrations: Inschrijvingen
+    events: Evenementen
+    series: Series
   user:
     address:
-      label: "Adres"
-      notfound: "Adres niet gevonden"
+      label: Adres
+      notfound: Adres niet gevonden
     medical_detail:
-      label: "Medische informatie"
-      notfound: "Geen medische informatie gevonden"
+      label: Medische informatie
+      notfound: Geen medische informatie gevonden
     emergency_contacts:
-      label: "Contactpersonen bij noodgeval"
-      notfound: "Geen contactpersonen gevonden"
+      label: Contactpersonen bij noodgeval
+      notfound: Geen contactpersonen gevonden
   dashboard:
-    future_events: "Toekomstige evenementen"
-    no_future_events: "Geen toekomstige evenementen"
-    registrations: "Inschrijvingen"
-    no_registrations: "Geen inschrijvingen"
+    future_events: Toekomstige evenementen
+    no_future_events: Geen toekomstige evenementen
+    registrations: Inschrijvingen
+    no_registrations: Geen inschrijvingen
 
   common:
     page_header:

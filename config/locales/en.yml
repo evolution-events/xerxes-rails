@@ -1,25 +1,25 @@
 en:
   topbar:
-    dashboard: "Home"
-    users: "Users"
-    registrations: "Registrations"
-    events: "Events"
-    series: "Series"
+    dashboard: Home
+    users: Users
+    registrations: Registrations
+    events: Events
+    series: Series
   user:
     address:
-      label: "Address"
-      notfound: "Address not found"
+      label: Address
+      notfound: Address not found
     medical_detail:
-      label: "Medical detail"
-      notfound: "No medical details found"
+      label: Medical detail
+      notfound: No medical details found
     emergency_contacts:
-      label: "Emergency contacts"
-      notfound: "No emergency contacts found"
+      label: Emergency contacts
+      notfound: No emergency contacts found
   dashboard:
-    future_events: "Future Events"
-    no_future_events: "No future events"
-    registrations: "Registrations"
-    no_registrations: "No registrations"
+    future_events: Future Events
+    no_future_events: No future events
+    registrations: Registrations
+    no_registrations: No registrations
 
   common:
     page_header:
