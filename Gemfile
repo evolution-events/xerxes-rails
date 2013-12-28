@@ -24,6 +24,9 @@ gem 'turbolinks'
 # In production-like environments, use MySQL
 gem 'mysql2'
 
+# The dirty work of verifying PhpBB hashes has already been done for us
+gem 'mram-phpbb_hash'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
