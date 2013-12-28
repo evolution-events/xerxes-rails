@@ -5,6 +5,7 @@
     <tr>
       <th>Name</th>
       <th>Url</th>
+      <th>Email</th>
       <th></th>
       <th></th>
       <th></th>
@@ -16,6 +17,7 @@
       <tr>
         <td><%= series.name %></td>
         <td><%= series.url %></td>
+        <td><%= series.email %></td>
         <td><%= link_to 'Show', series %></td>
         <td><%= link_to 'Edit', edit_series_path(series) %></td>
         <td><%= link_to 'Destroy', series, method: :delete, data: { confirm: 'Are you sure?' } %></td>
