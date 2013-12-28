@@ -2,8 +2,8 @@
 <%=
 if user.registrations.any? then
   content_tag('ul') do
-    content_tag('li') do
-      render partial: "dashboard/registration", collection: user.registrations
+    content_tag_for('li', user.registrations) do |registration|
+      render partial: "dashboard/registration", locals: {registration: registration}
     end
   end
 else

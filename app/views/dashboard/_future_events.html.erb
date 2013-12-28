@@ -2,8 +2,8 @@
 <%=
 if @future_events.any? then
   content_tag('ul') do
-    content_tag('li') do
-      render partial: "dashboard/future_event", collection: @future_events
+    content_tag_for('li', @future_events) do |future_event|
+      render partial: "dashboard/future_event", locals: {future_event: future_event}
     end
   end
 else
