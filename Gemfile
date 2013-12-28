@@ -24,6 +24,9 @@ gem 'turbolinks'
 # In production-like environments, use MySQL
 gem 'mysql2'
 
+# We'll need to be able to authenticate users, so let's use the Swiss army knife for authentication
+gem 'devise'
+
 # The dirty work of verifying PhpBB hashes has already been done for us
 gem 'mram-phpbb_hash'
 

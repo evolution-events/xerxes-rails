@@ -31,6 +31,9 @@ Xerxes::Application.configure do
   # ActionMailer::Base.deliveries array.
   config.action_mailer.delivery_method = :test
 
+  # Devise *needs* the default_url_options to be set.
+  config.action_mailer.default_url_options = { host: 'http://xerxes.evolution-events.nl' }
+
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
 end

@@ -7,7 +7,7 @@ describe "the language files" do
 
   locale_files = Dir.glob(pattern).reject do |filename|
     # do not test files that only contain framework-related translations
-    filename =~ /rails/
+    filename =~ /rails/ || filename =~ /devise/
   end
 
   base_language_file = locale_files.pop

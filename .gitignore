@@ -23,8 +23,9 @@
 *.swp
 *.swo
 
-# Everyone can have their own secret token in development
+# Everyone can have their own secrets token in development
 /config/secret_token
+/config/devise_token
 
 # Database config is really config, do not put it in source control
 /config/database.yml
