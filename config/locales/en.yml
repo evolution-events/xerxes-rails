@@ -55,6 +55,8 @@ en:
         hide_last_name: abbreviate last name in public communication?
         remember_address: remember my address for future registrations
         remember_emergency_contacts: remember my emergency contacts for future registrations
+        firstaid: first aid
+        bhv: BHV
       series:
         name: name
         url: website

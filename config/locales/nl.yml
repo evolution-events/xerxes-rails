@@ -55,6 +55,8 @@ nl:
         hide_last_name: achternaam afkorten in publieke lijsten?
         remember_address: onthoud mijn adres voor toekomstige inschrijvingen
         remember_emergency_contacts: onthoud mijn noodcontacten voor toekomstige inschrijvingen
+        firstaid: EHBO
+        bhv: BHV
       series:
         name: naam
         url: website
