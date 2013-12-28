@@ -12,7 +12,7 @@
 
 <%= render partial: "users/address", locals: { address: user.address } %>
 
-<%= render partial: "users/medical_details" %>
+<%= render partial: "users/medical_details", locals: {user: user} %>
 
-<%= render partial: "users/emergency_contacts" %>
+<%= render partial: "users/emergency_contacts", locals: {user: user} %>
 

@@ -1,6 +1,6 @@
 <h1><%= t('common.page_header.editing', model: Event.model_name.human).capitalize %></h1>
 
-<%= render 'form' %>
+<%= render partial: 'form', locals: {event: @event} %>
 
 <%= link_to 'Show', @event %> |
 <%= link_to 'Back', events_path %>

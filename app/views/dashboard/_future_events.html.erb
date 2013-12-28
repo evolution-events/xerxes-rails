@@ -1,9 +1,9 @@
 <h2><%= t('dashboard.future_events') %></h2>
 <%=
-if @future_events.any? then
+if events.any? then
   content_tag('ul') do
-    content_tag_for('li', @future_events) do |future_event|
-      render partial: "dashboard/future_event", locals: {future_event: future_event}
+    content_tag_for('li', events) do |event|
+      render partial: "dashboard/future_event", locals: {event: event}
     end
   end
 else

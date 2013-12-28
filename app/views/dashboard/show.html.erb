@@ -1,6 +1,6 @@
 <h1>Dashboard</h1>
 
-<%= render partial: 'future_events' %>
+<%= render partial: 'future_events', locals: { events: @future_events } %>
 
 <% if @current_user %>
   <%= render partial: 'registrations', locals: { user: @current_user } %>

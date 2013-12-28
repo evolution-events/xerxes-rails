@@ -1,10 +1,10 @@
-<%= form_for(@event) do |f| %>
-  <% if @event.errors.any? %>
+<%= form_for(event) do |f| %>
+  <% if event.errors.any? %>
     <div id="error_explanation">
-      <h2><%= t('activerecord.errors.template.header', model: Event.model_name.human, count: @event.errors.size) %></h2>
+      <h2><%= t('activerecord.errors.template.header', model: Event.model_name.human, count: event.errors.size) %></h2>
 
       <ul>
-      <% @event.errors.full_messages.each do |msg| %>
+      <% event.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
