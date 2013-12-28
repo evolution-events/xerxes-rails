@@ -1,49 +1,49 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong><%= Event.human_attribute_name('name') %>:</strong>
   <%= @event.name %>
 </p>
 
 <p>
-  <strong>Title:</strong>
+  <strong><%= Event.human_attribute_name('title') %>:</strong>
   <%= @event.title %>
 </p>
 
 <p>
-  <strong>Start date:</strong>
+  <strong><%= Event.human_attribute_name('start_date') %>:</strong>
   <%= @event.start_date %>
 </p>
 
 <p>
-  <strong>End date:</strong>
+  <strong><%= Event.human_attribute_name('end_date') %>:</strong>
   <%= @event.end_date %>
 </p>
 
 <p>
-  <strong>Location name:</strong>
+  <strong><%= Event.human_attribute_name('location_name') %>:</strong>
   <%= @event.location_name %>
 </p>
 
 <p>
-  <strong>Location info:</strong>
+  <strong><%= Event.human_attribute_name('location_info') %>:</strong>
   <%= @event.location_info %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong><%= Event.human_attribute_name('description') %>:</strong>
   <%= @event.description %>
 </p>
 
 <p>
-  <strong>Url:</strong>
+  <strong><%= Event.human_attribute_name('url') %>:</strong>
   <%= @event.url %>
 </p>
 
 <p>
-  <strong>Series:</strong>
+  <strong><%= Series.model_name.human %>:</strong>
   <%= @event.series_id %>
 </p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<%= link_to t('common.edit'), edit_event_path(@event) %> |
+<%= link_to t('common.back'), events_path %>

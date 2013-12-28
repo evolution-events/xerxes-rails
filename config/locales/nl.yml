@@ -1,11 +1,15 @@
 nl:
+  application:
+    name: Xerxes
   topbar:
     dashboard: Home
-    users: Gebruikers
+    users: Deelnemers
     registrations: Inschrijvingen
     events: Evenementen
     series: Series
   user:
+    new_user: Nieuwe deelnemer
+    listing: Deelnemers
     address:
       label: Adres
       notfound: Adres niet gevonden
@@ -15,13 +19,28 @@ nl:
     emergency_contacts:
       label: Contactpersonen bij noodgeval
       notfound: Geen contactpersonen gevonden
+  events:
+    new_event: Nieuw evenement
+    listing: Evenementen
+  series:
+    new_series: Nieuwe serie
+    listing: Series
+  registrations:
+    new_registration: Nieuwe inschrijving
+    listing: Inschrijvingen
   dashboard:
+    name: Dashboard
     future_events: Toekomstige evenementen
     no_future_events: Geen toekomstige evenementen
     registrations: Inschrijvingen
     no_registrations: Geen inschrijvingen
 
   common:
+    back: Terug
+    show: Tonen
+    edit: Bewerken
+    destroy: Verwijderen
+    confirm: Weet je het zeker?
     page_header:
       editing: '%{model} bewerken'
       dashboard: Dashboard
@@ -30,7 +49,7 @@ nl:
     models:
       series: serie
       event: evenement
-      user: gebruiker
+      user: deelnemer
       registration: inschrijving
     attributes:
       event:
@@ -60,6 +79,7 @@ nl:
       series:
         name: naam
         url: website
+        email: e-mailadres
       registration:
         user: deelnemer
         event: evenement

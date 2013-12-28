@@ -1,5 +1,5 @@
-<h1>New registration</h1>
+<h1><%= t('registration.listing') %></h1>
 
 <%= render partial: 'form', locals: {registration: @registration} %>
 
-<%= link_to 'Back', registrations_path %>
+<%= link_to t('common.back'), registrations_path %>

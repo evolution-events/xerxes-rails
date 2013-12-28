@@ -1,11 +1,11 @@
-<h1>Listing registrations</h1>
+<h1><%= t('registrations.listing') %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>User</th>
-      <th>Event</th>
-      <th>Status</th>
+      <th><%= Registration.human_attribute_name('user') %></th>
+      <th><%= Registration.human_attribute_name('event') %></th>
+      <th><%= Registration.human_attribute_name('status') %></th>
       <th></th>
       <th></th>
       <th></th>
@@ -18,9 +18,9 @@
         <td><%= registration.user %></td>
         <td><%= registration.event %></td>
         <td><%= registration.status %></td>
-        <td><%= link_to 'Show', registration %></td>
-        <td><%= link_to 'Edit', edit_registration_path(registration) %></td>
-        <td><%= link_to 'Destroy', registration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('common.show'), registration %></td>
+        <td><%= link_to t('common.edit'), edit_registration_path(registration) %></td>
+        <td><%= link_to t('common.destroy'), registration, method: :delete, data: { confirm: t('common.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Registration', new_registration_path %>
+<%= link_to t('registrations.new_registration'), new_registration_path %>

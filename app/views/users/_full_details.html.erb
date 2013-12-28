@@ -1,12 +1,12 @@
 <%= render partial: "users/details", locals: { user: user } %>
 
 <p>
-  <strong>First aid:</strong>
+  <strong><%= User.human_attribute_name('firstaid') %></strong>
   <%= @user.firstaid %>
 </p>
 
 <p>
-  <strong>BHV:</strong>
+  <strong><%= User.human_attribute_name('bhv') %></strong>
   <%= @user.bhv %>
 </p>
 

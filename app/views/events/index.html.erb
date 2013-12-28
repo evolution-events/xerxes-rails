@@ -1,17 +1,17 @@
-<h1>Listing events</h1>
+<h1><%= t('events.listing') %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Title</th>
-      <th>Start date</th>
-      <th>End date</th>
-      <th>Location name</th>
-      <th>Location info</th>
-      <th>Description</th>
-      <th>Url</th>
-      <th>Series</th>
+      <th><%= Event.human_attribute_name('name') %></th>
+      <th><%= Event.human_attribute_name('title') %></th>
+      <th><%= Event.human_attribute_name('start_date') %></th>
+      <th><%= Event.human_attribute_name('end_date') %></th>
+      <th><%= Event.human_attribute_name('location_name') %></th>
+      <th><%= Event.human_attribute_name('location_info') %></th>
+      <th><%= Event.human_attribute_name('description') %></th>
+      <th><%= Event.human_attribute_name('url') %></th>
+      <th><%= Series.model_name.human %></th>
       <th></th>
       <th></th>
       <th></th>
@@ -30,9 +30,9 @@
         <td><%= event.description %></td>
         <td><%= event.url %></td>
         <td><%= event.series_id %></td>
-        <td><%= link_to 'Show', event %></td>
-        <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('common.show'), event %></td>
+        <td><%= link_to t('common.edit'), edit_event_path(event) %></td>
+        <td><%= link_to t('common.destroy'), event, method: :delete, data: { confirm: t('common.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -40,4 +40,4 @@
 
 <br>
 
-<%= link_to 'New Event', new_event_path %>
+<%= link_to t('events.new_event'), new_event_path %>

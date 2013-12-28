@@ -1,18 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong><%= Series.human_attribute_name('name') %></strong>
   <%= @series.name %>
 </p>
 
 <p>
-  <strong>Url:</strong>
+  <strong><%= Series.human_attribute_name('url') %></strong>
   <%= @series.url %>
 </p>
 
 <p>
-  <strong>Email:</strong>
-  <%= @series.email %>
+  <strong><%= Series.human_attribute_name('email') %></strong>
+  <%= @series.url %>
 </p>
-<%= link_to 'Edit', edit_series_path(@series) %> |
-<%= link_to 'Back', series_index_path %>
+
+<%= link_to t('common.edit'), edit_series_path(@series) %> |
+<%= link_to t('common.back'), series_index_path %>

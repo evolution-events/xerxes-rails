@@ -1,11 +1,15 @@
 en:
+  application:
+    name: Xerxes
   topbar:
     dashboard: Home
-    users: Users
+    users: Participants
     registrations: Registrations
     events: Events
     series: Series
   user:
+    new_user: New participant
+    listing: Listing participants
     address:
       label: Address
       notfound: Address not found
@@ -15,13 +19,28 @@ en:
     emergency_contacts:
       label: Emergency contacts
       notfound: No emergency contacts found
+  events:
+    new_event: New event
+    listing: Listing events
+  series:
+    new_series: New series
+    listing: Series
+  registrations:
+    new_registration: New registration
+    listing: Registrations
   dashboard:
+    name: Dashboard
     future_events: Future Events
     no_future_events: No future events
     registrations: Registrations
     no_registrations: No registrations
 
   common:
+    back: Back
+    show: Show
+    edit: Edit
+    destroy: Delete
+    confirm: Are you sure?
     page_header:
       editing: 'editing %{model}'
       dashboard: Dashboard
@@ -30,7 +49,7 @@ en:
     models:
       event: event
       series: series
-      user: user
+      user: participant
       registration: registration
     attributes:
       event:
@@ -60,9 +79,9 @@ en:
       series:
         name: name
         url: website
+        email: email
       registration:
         user: participant
         event: event
         status: status
-
 

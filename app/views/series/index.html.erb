@@ -1,11 +1,11 @@
-<h1>Listing series</h1>
+<h1><%= t('series.listing') %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Url</th>
-      <th>Email</th>
+      <th><%= Series.human_attribute_name('name') %></th>
+      <th><%= Series.human_attribute_name('url') %></th>
+      <th><%= Series.human_attribute_name('email') %></th>
       <th></th>
       <th></th>
       <th></th>
@@ -18,9 +18,9 @@
         <td><%= series.name %></td>
         <td><%= series.url %></td>
         <td><%= series.email %></td>
-        <td><%= link_to 'Show', series %></td>
-        <td><%= link_to 'Edit', edit_series_path(series) %></td>
-        <td><%= link_to 'Destroy', series, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('common.show'), series %></td>
+        <td><%= link_to t('common.edit'), edit_series_path(series) %></td>
+        <td><%= link_to t('common.destroy'), series, method: :delete, data: { confirm: t('common.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Series', new_series_path %>
+<%= link_to t('series.new_series'), new_series_path %>

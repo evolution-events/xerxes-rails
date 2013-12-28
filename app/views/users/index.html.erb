@@ -1,19 +1,19 @@
-<h1>Listing users</h1>
+<h1><%= t('users.listing') %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>First name</th>
-      <th>Preposition</th>
-      <th>Last name</th>
-      <th>Username</th>
-      <th>Birthdate</th>
-      <th>Phone number</th>
-      <th>Email</th>
-      <th>Gender</th>
-      <th>Hide last name</th>
-      <th>First aid</th>
-      <th>BHV</th>
+      <th><%= User.human_attribute_name('first_name') %></th>
+      <th><%= User.human_attribute_name('preposition') %></th>
+      <th><%= User.human_attribute_name('last_name') %></th>
+      <th><%= User.human_attribute_name('username') %></th>
+      <th><%= User.human_attribute_name('birthdate') %></th>
+      <th><%= User.human_attribute_name('phone_number') %></th>
+      <th><%= User.human_attribute_name('email') %></th>
+      <th><%= User.human_attribute_name('gender') %></th>
+      <th><%= User.human_attribute_name('hide_last_name') %></th>
+      <th><%= User.human_attribute_name('firstaid') %></th>
+      <th><%= User.human_attribute_name('bhv') %></th>
       <th></th>
       <th></th>
       <th></th>
@@ -34,9 +34,9 @@
         <td><%= user.hide_last_name %></td>
         <td><%= user.firstaid %></td>
         <td><%= user.bhv %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('common.show'), user %></td>
+        <td><%= link_to t('common.edit'), edit_user_path(user) %></td>
+        <td><%= link_to t('common.destroy'), user, method: :delete, data: { confirm: t('common.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -44,4 +44,4 @@
 
 <br>
 
-<%= link_to 'New User', new_user_path %>
+<%= link_to t('users.new_user'), new_user_path %>

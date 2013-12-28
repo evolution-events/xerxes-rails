@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>User:</strong>
+  <strong><%= Registration.human_attribute_name('user') %></strong>
   <%= @registration.user %>
 </p>
 
 <p>
-  <strong>Event:</strong>
+  <strong><%= Registration.human_attribute_name('event') %></strong>
   <%= @registration.event %>
 </p>
 
 <p>
-  <strong>Status:</strong>
+  <strong><%= Registration.human_attribute_name('status') %></strong>
   <%= @registration.status %>
 </p>
 
-<%= link_to 'Edit', edit_registration_path(@registration) %> |
-<%= link_to 'Back', registrations_path %>
+<%= link_to t('common.edit'), edit_registration_path(@registration) %> |
+<%= link_to t('common.back'), registrations_path %>
