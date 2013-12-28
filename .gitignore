@@ -25,3 +25,6 @@
 
 # Everyone can have their own secret token in development
 /config/secret_token
+
+# Database config is really config, do not put it in source control
+/config/database.yml

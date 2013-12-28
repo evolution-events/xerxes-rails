@@ -17,3 +17,8 @@ test:
 production:
   <<: *DEFAULTS
   database: db/production.sqlite3
+
+phpbb:
+  adapter: mysql2
+  database: xerxes_phpbb
+  username: xerxes
