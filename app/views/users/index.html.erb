@@ -12,6 +12,8 @@
       <th>Email</th>
       <th>Gender</th>
       <th>Hide last name</th>
+      <th>First aid</th>
+      <th>BHV</th>
       <th></th>
       <th></th>
       <th></th>
@@ -30,6 +32,8 @@
         <td><%= user.email %></td>
         <td><%= user.gender %></td>
         <td><%= user.hide_last_name %></td>
+        <td><%= user.firstaid %></td>
+        <td><%= user.bhv %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
