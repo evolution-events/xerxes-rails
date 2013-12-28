@@ -29,3 +29,8 @@
 
 # Database config is really config, do not put it in source control
 /config/database.yml
+
+# Each instance can have its own configuration. These files must not
+# be overwritten when deploying.
+/config/instance/*.rb
+!/config/instance/*.example.rb
