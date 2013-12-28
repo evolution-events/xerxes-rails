@@ -1,4 +1,5 @@
 {<img src="https://travis-ci.org/evolution-events/xerxes.png?branch=master" alt="Build Status" />}[https://travis-ci.org/matthijskooijman/xerxes]
+{<img src="https://codeclimate.com/github/evolution-events/xerxes.png" alt="Code Quality"/>}[https://codeclimate.com/github/evolution-events/xerxes]
 
 == README
 
