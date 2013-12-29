@@ -1,5 +1,11 @@
 Xerxes::Application.routes.draw do
+  devise_for :users
+
   root 'dashboard#show'
+
+  devise_scope :user do
+    get 'login' => 'devise/sessions#new'
+  end
 
   resources :registrations
 

@@ -18,7 +18,9 @@ production:
   <<: *DEFAULTS
   database: db/production.sqlite3
 
-phpbb:
-  adapter: mysql2
-  database: xerxes_phpbb
-  username: xerxes
+# Provide the following connection if you want to
+# allow users to sign in with their phpbb credentials
+#phpbb:
+#  adapter: mysql2
+#  database: xerxes_phpbb
+#  username: xerxes

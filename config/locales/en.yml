@@ -67,6 +67,7 @@ en:
         preposition: preposition
         last_name: last name
         username: login
+        password: password
         birthdate: birthdate
         phone_number: phone number
         email: email

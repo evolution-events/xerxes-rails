@@ -67,6 +67,7 @@ nl:
         preposition: tussenvoegsels
         last_name: achternaam
         username: inlognaam
+        password: paswoord
         birthdate: geboortedatum
         phone_number: telefoonnummer
         email: e-mailadres
