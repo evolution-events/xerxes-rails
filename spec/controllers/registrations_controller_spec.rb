@@ -19,6 +19,9 @@ require 'spec_helper'
 # that an instance is receiving a specific message.
 
 describe RegistrationsController do
+  before :each do
+    login
+  end
 
   # This should return the minimal set of attributes required to create a valid
   # Registration. As you add validations to Registration, be sure to
