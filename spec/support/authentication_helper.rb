@@ -6,6 +6,7 @@ module AuthenticationHelper
     end
 
     def login_as(user)
+      user.class.devise
       sign_in(user)
     end
   end
